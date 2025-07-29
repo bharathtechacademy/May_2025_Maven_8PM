@@ -69,7 +69,7 @@ public class StringOperations {
 		
 		//String is empty ? (not even white spaces) or Blank ? (white spaces allowed)
 		System.out.println("".isEmpty());
-		System.out.println(" ".isEmpty());
+		System.out.println(" ".isEmpty());	
 		System.out.println(" ".isBlank());
 		
 		// String, StringBuffer, StringBuilder
