@@ -3,14 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="BROWSER" value="chrome"/>
   <parameter name="URL" value="https://gooogle.com"/>
+  <listeners>
+    <listener class-name="testng.framework.features.TestListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="testng.framework.features.AppCommons">
         <methods>
           <include name="TestCase1"/>
+          <include name="startReporting"/>
+          <include name="launchBrowserAndApplication"/>
           <include name="closeBrowser1"/>
-          <include name="TestCase2"/>
-          <include name="closeBrowser2"/>
+          <include name="stopReporting"/>
         </methods>
       </class> <!-- testng.framework.features.AppCommons -->
     </classes>
