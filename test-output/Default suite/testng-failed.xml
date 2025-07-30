@@ -3,19 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.framework.concepts.AppCommons">
+      <class name="testng.framework.features.AppCommons">
         <methods>
-          <include name="stopReporting"/>
-          <include name="logoutFromApp"/>
-          <include name="launchBrowserAndApplication"/>
           <include name="startReporting"/>
-          <include name="testCase2"/>
+          <include name="launchBrowserAndApplication"/>
+          <include name="stopReporting"/>
+          <include name="TestCase2"/>
           <include name="closeBrowser"/>
-          <include name="testCase1"/>
-          <include name="loginIntoApp"/>
-          <include name="testCase3"/>
         </methods>
-      </class> <!-- testng.framework.concepts.AppCommons -->
+      </class> <!-- testng.framework.features.AppCommons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
